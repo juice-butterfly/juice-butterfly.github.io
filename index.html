@@ -158,7 +158,7 @@
         <p class="proj-tagline">面向中南财经政法大学的校园生涯规划平台，定制版，已在校内小范围真实使用。</p>
         <p><strong>为什么做</strong>：想找竞赛、保研、考研的信息，东一个西一个，找不到也问不动，干脆自己做一个。</p>
         <p class="proj-metrics"><span><strong>1.9万</strong>行代码</span><span><strong>128</strong> 个接口</span><span><strong>80</strong> 个专业培养方案</span></span>
-        <figure class="proj-fig"><img src="assets/img/zhiyin-1200.webp" alt="职引平台首页截图" loading="lazy" width="1200" height="783"></figure>
+        <figure class="proj-fig"><img src="assets/img/zhiyin-960.webp" srcset="assets/img/zhiyin-600.webp 600w, assets/img/zhiyin-960.webp 960w" sizes="(max-width:860px) calc(100vw - 48px), 700px" alt="职引平台首页截图" loading="lazy" width="960" height="626"></figure>
         <p><strong>关键决策</strong>：分年级培养方案版本联动，学生只看自己那一届的方案，不会串届；检索刻意用轻量关键词方案、不上向量库（性价比考虑）；LLM 输出用四级容错 JSON 解析，模型输出格式不稳时逐级降级不整条失败；加 Prompt 注入护栏与「去 AI 味」约束。</p>
         <p><strong>规模</strong>：19 个页面 / 128 个接口 / 33 张表，前后端约 1.9 万行。培养方案覆盖 19 个学院 / 80 个专业，基础数据含 21 个学院 / 122 项竞赛。部署在自有腾讯云，nginx 同源 + pm2 + MySQL。</p>
         <p class="proj-links"><a href="https://github.com/juice-butterfly/career-planner" rel="noopener">GitHub 仓库 →</a></p>
@@ -171,7 +171,7 @@
         <p class="proj-tagline">八字 + 吠陀占星组合解读的 Web 应用。核心诉求：结构化、按四柱分项的解读，拒绝笼统空话。</p>
         <p><strong>为什么做</strong>：有一阵子比较迷茫——刚好那时候有个喜欢的女孩，就更想把自己看清楚一点。以前迷茫的时候，我习惯算算命，这次干脆把它做成一个工具。</p>
         <p class="proj-metrics"><span><strong>3</strong> 种排盘模式</span><span><strong>7</strong> 个解读方向</span><span><strong>200</strong> 样本回归集</span></span>
-        <figure class="proj-fig"><img src="assets/img/xuanji-1200.webp" alt="玄机阁排盘界面截图" loading="lazy" width="1200" height="938"></figure>
+        <figure class="proj-fig"><img src="assets/img/xuanji-960.webp" srcset="assets/img/xuanji-600.webp 600w, assets/img/xuanji-960.webp 960w" sizes="(max-width:860px) calc(100vw - 48px), 700px" alt="玄机阁排盘界面截图" loading="lazy" width="960" height="750"></figure>
         <p><strong>关键决策</strong>：排盘全部本地计算，不交给大模型——生克方向、夫妻宫这类易错项用确定性预计算后再喂给模型；三种模式（中式八字 / 西式印占 / 双盘合参，印占失败自动降级纯八字）；一次性临时密码 + 强制改密的账号体系；200 样本排盘回归集 + 六维度 LLM 裁判 + 六阶段部署门禁的质量体系。</p>
         <p><strong>规模</strong>：七个解读方向（家运 / 学业 / 事业 / 婚恋 / 健康 / 合婚 / 人际），邮箱注册 + 命理档案 + 9 类关系人档案，Supabase 云库。</p>
         <p class="proj-links"><a href="https://github.com/juice-butterfly/xuanjige" rel="noopener">GitHub 仓库 →</a></p>
@@ -185,7 +185,7 @@
         <p><strong>我的分工</strong>：4 人团队（金融学 × 金融数学），负责第 3/5/7 章正文（市场缺口 / AI 干预机制 / 合规论证）+ 交互原型。</p>
         <p><strong>关键决策</strong>：判定口径采用《中国糖尿病防治指南（2024 版）》；干预效果建模取 40%，比 RCT 的 51–58% 有意保守——远程 AI 干预没有同等级证据；合规红线严格卡服务成本 ≤ 净保费 20% 的监管要求。原型 v3.15 单文件 HTML，896 项回归断言全绿，手机端零溢出。</p>
         <p class="proj-metrics"><span><strong>896</strong> 项回归断言</span><span><strong>≤20%</strong> 服务成本合规红线</span><span><strong>40%</strong> 干预系数保守取值</span></span>
-        <figure class="proj-fig"><img src="assets/img/khb-1200.webp" alt="代谢健康守护线上 Demo 首页" loading="lazy" width="1200" height="713"></figure>
+        <figure class="proj-fig"><img src="assets/img/khb-960.webp" srcset="assets/img/khb-600.webp 600w, assets/img/khb-960.webp 960w" sizes="(max-width:860px) calc(100vw - 48px), 700px" alt="代谢健康守护线上 Demo 首页" loading="lazy" width="960" height="570"></figure>
         <p class="proj-links"><a href="https://juice-butterfly.github.io/metabolic-guardian/" rel="noopener">在线 Demo →</a><a href="https://github.com/juice-butterfly/metabolic-guardian" rel="noopener">GitHub 仓库 →</a></p>
       </div>
     </details>
@@ -197,7 +197,7 @@
         <p><strong>为什么做</strong>：骑手雨天单多、收入说断就断，出了事没人管。那就把这件事变成算得清的：降雨量到阈值，自动触发赔付。</p>
         <p><strong>我的分工</strong>：两人队，我负责 AI 判定、区块链设计以及前端设计。</p>
         <p class="proj-metrics"><span><strong>主赛道</strong>季军</span><span><strong>483</strong> 项断言 · 17 道门禁</span><span><strong>2/3</strong> 多签 operator</span></span>
-        <figure class="proj-fig"><img src="assets/img/rainproof-1200.webp" alt="雨证演示站：主网合约与保费档位" loading="lazy" width="1200" height="800"></figure>
+        <figure class="proj-fig"><img src="assets/img/rainproof-960.webp" srcset="assets/img/rainproof-600.webp 600w, assets/img/rainproof-960.webp 960w" sizes="(max-width:860px) calc(100vw - 48px), 700px" alt="雨证演示站：主网合约与保费档位" loading="lazy" width="960" height="640"></figure>
         <p><strong>关键决策</strong>：v3 主网合约（12 / 24 两档）+ 2/3 多签 operator；AI 判定用 canonical JSON 双哈希上链，第三方可复算；单文件演示站含链上核验台 + 17 道离线门禁 / 483 项断言。赛前基线打 tag，「赛前 / 赛期」边界靠 tag 说清。</p>
         <p><strong>说明</strong>：只做精算模型 + 产品原型验证，不宣称经营保险。这是我第一次参加黑客松类的比赛，赛前区块链零基础，赛期内从零走通了「合约部署 → 多签 operator → 链上证据链 → 核验台」。</p>
         <p class="proj-links"><a href="https://github.com/juice-butterfly/rainproof" rel="noopener">GitHub 仓库 →</a></p>
@@ -210,7 +210,7 @@
         <p class="proj-tagline">货币金融学的利率章节，做成能动手玩的诊断台。</p>
         <p><strong>为什么做</strong>：老师课上讲到利率那一章，公式和传导链条光靠背很容易糊，就想着做一个和课本结合的工具，边学边用。</p>
         <p class="proj-metrics"><span><strong>4/4</strong> 传导链路诊断</span><span><strong>米什金</strong>口径框架</span><span><strong>0</strong> 依赖 · 单文件</span></span>
-        <figure class="proj-fig"><img src="assets/img/rates-1200.webp" alt="利率传导诊断台：传导链条与参数控制面板" loading="lazy" width="1200" height="870"></figure>
+        <figure class="proj-fig"><img src="assets/img/rates-960.webp" srcset="assets/img/rates-600.webp 600w, assets/img/rates-960.webp 960w" sizes="(max-width:860px) calc(100vw - 48px), 700px" alt="利率传导诊断台：传导链条与参数控制面板" loading="lazy" width="960" height="696"></figure>
         <p><strong>关键决策</strong>：按米什金体系 + 中国教材的口径组织分析框架，覆盖到期收益率与债券定价、久期、费雪效应、利率的期限结构与风险结构；公式全部本地实时重算，参数面板拖动即时联动传导结果，零依赖单文件部署——这也是后来所有单文件演示站的原型。</p>
         <p class="proj-links"><a href="https://juice-butterfly.github.io/monetary-finance-rates/" rel="noopener">在线 Demo →</a><a href="https://github.com/juice-butterfly/monetary-finance-rates" rel="noopener">GitHub 仓库 →</a></p>
       </div>
