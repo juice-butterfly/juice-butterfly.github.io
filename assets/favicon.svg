@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- 爪印 favicon：1 掌垫 + 4 趾垫（长春花蓝） -->
+  <g fill="#6E96E0">
+    <ellipse cx="32" cy="42" rx="13" ry="11"/>
+    <ellipse cx="14" cy="26" rx="6" ry="7.5"/>
+    <ellipse cx="26" cy="18" rx="6" ry="8"/>
+    <ellipse cx="40" cy="18" rx="6" ry="8"/>
+    <ellipse cx="51" cy="26" rx="6" ry="7.5"/>
+  </g>
+</svg>
