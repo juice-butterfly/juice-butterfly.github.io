@@ -70,12 +70,15 @@ mark.todo{
   gap:40px;padding-top:64px;padding-bottom:88px;
 }
 .hero-inner>*{min-width:0}
-.hero-kicker{font-size:14px;letter-spacing:.08em;color:var(--ink-3);margin-bottom:14px}
+.hero-kicker{display:flex;align-items:center;gap:10px;font-size:12.5px;
+  letter-spacing:.18em;color:var(--ink-3);margin-bottom:22px;font-weight:500}
+.hero-kicker::before{content:"";width:7px;height:7px;border-radius:50%;
+  background:var(--jade);flex:none}
 .hero h1{
-  font-family:var(--ff-heading);font-weight:500;
-  font-size:52px;line-height:1.25;margin-bottom:18px;
+  font-family:var(--ff-heading);font-weight:700;
+  font-size:clamp(44px,11vw,84px);line-height:1.18;letter-spacing:.01em;
+  margin-bottom:26px;text-wrap:balance;
 }
-.hero-line{font-size:19px;color:var(--jade-deep);margin-bottom:12px}
 .hero-tags{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:34px}
 .hero-tags span{
   font-size:13px;padding:4px 12px;border-radius:999px;
@@ -98,7 +101,11 @@ mark.todo{
   font-family:var(--ff-mono);font-size:.32em;font-weight:400;
   color:var(--jade);margin-left:16px;letter-spacing:.14em;vertical-align:middle;
 }
-.hero-sub{font-size:15px;color:var(--ink-2);margin-bottom:22px}
+.hero-tags span::before{content:"";width:4px;height:4px;border-radius:50%;
+  background:var(--jade);flex:none}
+.hero-sub{font-size:15.5px;line-height:1.95;color:var(--ink-2);margin-bottom:24px;max-width:26em}
+.hero-sub b{color:var(--ink);font-weight:700}
+.hero-tags span{display:inline-flex;align-items:center;gap:7px}
 
 /* ---------- 滚动渐入（滚动叙事节奏；reduced-motion 由 JS 跳过 + 此处兜底） ---------- */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .65s ease,transform .65s ease}
@@ -249,7 +256,6 @@ h3.sub{
 @media (max-width:860px){
   .hero-inner{grid-template-columns:1fr;padding-top:44px;padding-bottom:88px}
   .hero-art{display:none}
-  .hero h1{font-size:40px}
   .about-grid,.about-cols,.org-grid{grid-template-columns:1fr}
   .org-card{padding:30px 26px}
   .exp-list li{flex-direction:column;gap:2px}

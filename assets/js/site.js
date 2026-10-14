@@ -63,7 +63,7 @@
       for (var i = 0; i < text.length; i++) {
         var s = document.createElement('span');
         s.className = 'ch';
-        s.style.animationDelay = (0.05 + i * 0.08) + 's';
+        s.style.animationDelay = (0.05 + i * 0.055) + 's';
         s.textContent = text[i];
         frag.appendChild(s);
       }
