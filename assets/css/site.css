@@ -302,6 +302,12 @@ h3.sub{
 .lesson-quote p{font-size:16.5px;line-height:2;color:var(--ink-2);margin-bottom:14px}
 .lesson-quote p:last-child{margin-bottom:0}
 
+/* 9) 板块英文小标 + 联系区大字（借鉴参照站的分幕排版） */
+.sec-eyebrow{font-size:12px;letter-spacing:.32em;color:var(--ink-3);
+  text-transform:uppercase;margin-bottom:12px;font-family:var(--ff-mono,var(--ff-body))}
+.contact-big{font-family:var(--ff-heading);font-weight:700;
+  font-size:clamp(34px,7vw,64px);line-height:1.2;color:var(--ink);margin-bottom:30px}
+
 /* ---------- 深色模式（data-theme="dark"，见 site.js） ---------- */
 [data-theme="dark"]{
   --paper:#101828;   --paper-2:#161F35;  --paper-3:#1E2A45;
@@ -321,6 +327,12 @@ h3.sub{
 [data-theme="dark"] .tl-paw svg{fill:#101828}
 [data-theme="dark"] .footer{background:#0C1322;color:var(--ink-3)}
 [data-theme="dark"] .proj-fig img{border-color:#2A3A5C}
+
+/* 8) 顶部阅读进度条（借鉴参照站，滚动时从左到右涨满） */
+.progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:100;pointer-events:none}
+.progress i{display:block;height:100%;width:0;
+  background:linear-gradient(90deg,var(--jade),var(--clay));
+  transition:width .12s linear}
 
 /* ---------- 打印 / 动效偏好 ---------- */
 @media print{

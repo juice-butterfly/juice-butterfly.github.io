@@ -25,6 +25,20 @@
     });
   }
 
+  // ── 顶部阅读进度条（借鉴参照站）
+  var bar = document.getElementById('progressBar');
+  if (bar) {
+    var updBar = function () {
+      var doc = document.documentElement;
+      var max = doc.scrollHeight - window.innerHeight;
+      var p = max > 0 ? (window.scrollY || doc.scrollTop) / max : 0;
+      bar.style.width = Math.min(Math.max(p, 0), 1) * 100 + '%';
+    };
+    window.addEventListener('scroll', updBar, { passive: true });
+    window.addEventListener('resize', updBar);
+    updBar();
+  }
+
   var reduce = false;
   try {
     reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
